@@ -1,0 +1,4 @@
+#!/bin/sh
+
+mkdir -p ~/scrn
+import -window root ~/scrn/scrn-$(date '+%y-%m-%d_%H:%M:%S(%N)').png

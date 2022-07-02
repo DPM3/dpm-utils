@@ -1,0 +1,9 @@
+#!/bin/sh
+
+RES=$(cat ~/.configs.txt | dmenu -F -sb "#dd6611" -p configs)
+
+if  [ -z "${RES}" ] ; then
+		exit 0
+fi
+
+/bin/sh -c "$EDITOR $RES"
