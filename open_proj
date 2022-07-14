@@ -2,9 +2,8 @@
 
 RES=$(cat ~/.projects.txt | dmenu -F -sb "#dd6611" -p projects)
 
-if  [ -z "${RES}" ]
-	then
-		exit 0
+if  [ -z "$RES" ]; then
+	exit 0
 fi
 
-/bin/sh -c "cd $RES ; $EDITOR ."
+cd $RES && $MY_TERMINAL
