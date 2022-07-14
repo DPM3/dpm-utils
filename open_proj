@@ -6,4 +6,4 @@ if  [ -z "$RES" ]; then
 	exit 0
 fi
 
-cd $RES && $MY_TERMINAL
+cd $(eval echo $RES) && $MY_TERMINAL
